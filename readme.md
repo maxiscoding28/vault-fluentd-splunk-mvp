@@ -34,7 +34,7 @@ System logs from a running Vault server will be sent to Fluentd and from Fluentd
    ```
    docker network create vault-fluentd-net --subnet 192.168.211.0/24
 ```
-2. We'll use the [fluent-plugin-splunk-hec](https://github.com/splunk/fluent-plugin-splunk-hec) plugin to send logs from fluentd to Splunk. To do this, we'll need to install in on the fluentd docker image before running the container. Build a docker image using the following Dockerfile *(note I am using `:edge-debian` because it plays nice with my arm64 machine)*. Dockerfile:
+2. We'll use the [fluent-plugin-splunk-hec](https://github.com/splunk/fluent-plugin-splunk-hec) plugin to send logs from fluentd to Splunk. To do this, we'll need to install it on the fluentd docker image before running the container. Build a docker image using the following Dockerfile *(note I am using `:edge-debian` because it plays nice with my arm64 machine)*. Dockerfile:
 ```
 # Dockerfile
 
