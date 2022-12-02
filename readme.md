@@ -103,4 +103,4 @@ docker run --cap-add=IPC_LOCK --name=vault \
 ### Wrapping Up
 Wait a few minutes and you should start seeing system logs in splunk at `index=vault-sys-logs`.
 
-If you still aren't seeing logs, add the following match above (the existing match) in your conf file. This will output logs to stdout on the fluentd container and allow you to troubleshoot.
+If you still aren't seeing logs, uncomment the match (above the existing match) in your conf file. This will output logs to stdout on the fluentd container and allow you to troubleshoot.
