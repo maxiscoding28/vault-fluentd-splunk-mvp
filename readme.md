@@ -71,9 +71,9 @@ bind 0.0.0.0
 # This <match> outputs logs to syslog in the fluentd container.
 # This is for debugging purposes and can be uncommented
 # for troubleshooting purposes
-<match vault>
-@type stdout
-</match>
+# <match vault>
+# @type stdout
+# </match>
 
 <match vault>
 @type splunk_hec
